@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./src/img/favicon.png">
+</head>
+<body>
+    <header>
+        <a href="#inicio">Portafolio</a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>¡Qué tal! Soy Byron :D</h1>
+            <p>Me gusta la tecnología, por lo que actualmente me estoy formando como desarrollador de software.</p>
+            <a href="#contacto">Contáctame aquí</a>
+        </section>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <img id="foto-perfil" src="./src/img/profile.webp" alt="Foto de perfil de un perro con traje que uso en GitHub">
+            <p>Soy un estudiante que se encuentra cursando la carrera de Sistemas de Información, además de estudiar programación web por mi cuenta. Me gustan los idiomas, la música, el diseño web y configurar mi sistema operativo a mi manera (Uso Debian actualmente).</p>
+            <p>Me apoyo de la Inteligencia Artificial para comprender tecnologías o conceptos que no domino al 100%, por lo que es una herramienta fundamental en mi desarrollo personal. Gracias a la IA logro aprender de mis errores y busco la mejor forma de corregirlos.</p>
+            <p>Actualmente, estoy aprendiendo/repasando tecnologías como HTML, CSS, JavaScript, MySQL y Git/GitHub. A futuro quiero aprender backend web con la ayuda de NodeJS y React.</p>
+            <p>Quiero desempeñarme como desarrollador web frontend, ya que es lo que más me llama la atención, aunque no planeo dejar de un lado el backend. Muy aparte de eso, me gustaría adentrarme también en el mundo del desarrollo de videojuegos, algo que personalmente he intentado con anterioridad.</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <h3 class="habilidades-concretas">Habilidades Técnicas</h3>
+                <div class="habilidad">
+                    <h4>HTML</h4>
+                    <span>60%</span>
+                    <meter value="60" min="0" max="100"></meter>
+                </div>
+                <div class="habilidad">
+                    <h4>CSS</h4>
+                    <span>50%</span>
+                    <meter value="50" min="0" max="100"></meter>
+                </div>
+                <div class="habilidad">
+                    <h4>JavaScript</h4>
+                    <span>40%</span>
+                    <meter value="40" min="0" max="100"></meter>
+                </div>
+                <div class="habilidad">
+                    <h4>Git</h4>
+                    <span>40%</span>
+                    <meter value="40" min="0" max="100"></meter>
+                </div>
+                <div class="habilidad">
+                    <h4>MySQL</h4>
+                    <span>40%</span>
+                    <meter value="40" min="0" max="100"></meter>
+                </div>
+                <div class="habilidad">
+                    <h4>Linux</h4>
+                    <span>40%</span>
+                    <meter value="40" min="0" max="100"></meter>
+                </div>
+            <h3 class="habilidades-concretas">Otras habilidades</h3>
+                <div class="habilidad">
+                    <h4>Inglés: Nivel Medio</h4>
+                </div>
+                <div class="habilidad">
+                    <h4>Esperanto: Nivel Básico</h4>
+                </div>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <h3>Configuración para i3WM</h3>
+                <img src="./src/img/proyecto1.png" alt="i3WM con i3Blocks como status bar y dmenu como interfaz de un script de capturas">
+                <p>Configuración de un escritorio Linux que funciona con un window manager de tipo mosaico (i3WM), junto a otras herramientas como: Polybar, dmenu, Rofi, dunst, i3Status Bar, i3Blocks y scripts de funcionamiento.</p>
+                <a href="https://github.com/Byr-git/dotfiles-i3">Repo Github</a>
+            </article>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario">
+                <fieldset>
+                    <legend>Información de contacto</legend>
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Tu nombre completo">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="example@email.com">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tu mensaje</legend>
+                    <div class="campo">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" name="asunto" id="asunto" required placeholder="¿Qué buscas?">
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" required placeholder="Escribe aquí tu mensaje..."></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Hecho con mucha paciencia por Byron :D</p>
+        <p>© 2026</p>
+        <a href="https://github.com/Byr-git">GitHub</a>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+:root {
+    --color-fondo: #0d0819;
+    --color-fondo2: rgb(28, 18, 47);
+    --color-fondo3: #2e18399b;
+    --color-destacado: #875585;
+    --color-texto: #fbd9f8;
+    --color-texto2: #cb9fc8;
+
+    --radio: 50px;
+    --sombra: 0 2px 5px rgba(0, 0, 0, 0.916);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 100px;
+    background-color: var(--color-fondo3);
+    box-shadow: var(--sombra);
+    backdrop-filter: blur(5px);
+}
+
+header a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    display: flex;
+    gap: 10px;
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: var(--color-texto);
+    background-color: var(--color-destacado);
+    border-radius: var(--radio);
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 100px 40px;
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-fondo);
+    gap: 50px;
+    text-align: center;
+}
+
+#inicio h1{
+    font-size: 100px;
+}
+
+#inicio p {
+    font-size: 30px;
+    color: var(--color-texto2);
+}
+
+#inicio a {
+    padding: 30px 80px;
+    color: var(--color-texto);
+    text-decoration: none;
+    background-color: var(--color-destacado);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    margin: 40px 0px;
+}
+
+#inicio a:hover {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+    animation: pulseAnimation 0.5s ease;
+}
+
+@keyframes pulseAnimation {
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+#sobre-mi {
+    background-color: var(--color-fondo2);
+}
+
+#habilidades {
+    background-color: var(--color-fondo);
+}
+
+#proyectos {
+    background-color: var(--color-fondo2);
+}
+
+#contacto {
+    background-color: var(--color-fondo);
+}
+
+
+footer {
+    background-color: var(--color-destacado);
+}
+
+body {
+    color: var(--color-texto);
+}
+

@@ -4,7 +4,7 @@
     --color-fondo3: #2e18399b;
     --color-destacado: #875585;
     --color-texto: #fbd9f8;
-    --color-texto2: #cb9fc8;
+    --color-texto2: #e3cae1;
 
     --radio: 50px;
     --sombra: 0 2px 5px rgba(0, 0, 0, 0.916);
@@ -15,6 +15,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
 }
 
 header {
@@ -58,7 +68,7 @@ nav a:hover {
 
 section {
     min-height: 100vh;
-    padding: 100px 100px 40px;
+    padding: 100px 100px;
 }
 
 #inicio {
@@ -69,6 +79,7 @@ section {
     background-color: var(--color-fondo);
     gap: 50px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 #inicio h1{
@@ -78,10 +89,12 @@ section {
 #inicio p {
     font-size: 30px;
     color: var(--color-texto2);
+    width: 1000px;
 }
 
 #inicio a {
     padding: 30px 80px;
+    font-size: 18px;
     color: var(--color-texto);
     text-decoration: none;
     background-color: var(--color-destacado);
@@ -103,7 +116,36 @@ section {
 }
 
 #sobre-mi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     background-color: var(--color-fondo2);
+}
+
+.foto-perfil {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: var(--sombra);
+}
+
+.sobre-mi-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.parrafos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--color-texto2);
+}
+
+#sobre-mi h2 {
+    font-size: 40px ;
+    font-weight: bold;
 }
 
 #habilidades {

@@ -22,12 +22,12 @@
         </nav>
     </header>
     <main>
-        <section id="inicio">
+        <section id="inicio" class="seccion-principal">
             <h1>¡Qué tal! Soy Byron :D</h1>
             <p>Me gusta la tecnología, por lo que actualmente me estoy formando como desarrollador de software.</p>
             <a href="#contacto">Contáctame aquí</a>
         </section>
-        <section id="sobre-mi">
+        <section id="sobre-mi" class="seccion-principal">
             <img class="foto-perfil" src="./src/img/profile.webp" alt="Foto de perfil de un perro con traje">
             <div class="sobre-mi-contenedor">
                 <h2>Sobre mí</h2>
@@ -39,48 +39,90 @@
                 </div>
             </div>
         </section>
-        <section id="habilidades">
+        <section id="habilidades" class="seccion-principal">
             <h2>Habilidades</h2>
-            <h3 class="habilidades-concretas">Habilidades Técnicas</h3>
-                <div class="habilidad">
-                    <h4>HTML</h4>
-                    <span>60%</span>
-                    <meter value="60" min="0" max="100"></meter>
-                </div>
-                <div class="habilidad">
-                    <h4>CSS</h4>
-                    <span>50%</span>
-                    <meter value="50" min="0" max="100"></meter>
-                </div>
-                <div class="habilidad">
-                    <h4>JavaScript</h4>
-                    <span>40%</span>
-                    <meter value="40" min="0" max="100"></meter>
-                </div>
-                <div class="habilidad">
-                    <h4>Git</h4>
-                    <span>40%</span>
-                    <meter value="40" min="0" max="100"></meter>
-                </div>
-                <div class="habilidad">
-                    <h4>MySQL</h4>
-                    <span>40%</span>
-                    <meter value="40" min="0" max="100"></meter>
-                </div>
-                <div class="habilidad">
-                    <h4>Linux</h4>
-                    <span>40%</span>
-                    <meter value="40" min="0" max="100"></meter>
-                </div>
-            <h3 class="habilidades-concretas">Otras habilidades</h3>
-                <div class="habilidad">
-                    <h4>Inglés: Nivel Medio</h4>
-                </div>
-                <div class="habilidad">
-                    <h4>Esperanto: Nivel Básico</h4>
-                </div>
+            <div class="habilidades-contenedor">             
+                <section class="habilidades-bloque">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>HTML</h4>
+                            <span>60%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>CSS</h4>
+                            <span>50%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>JavaScript</h4>
+                            <span>40%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>Git</h4>
+                            <span>40%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>MySQL</h4>
+                            <span>40%</span>
+                        </div>                       
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>Linux</h4>
+                            <span>40%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 40%;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="habilidades-bloque">
+                    <h3>Otras habilidades</h3>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>Inglés</h4>
+                            <span>Nivel Medio</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <div class="habilidad-info">
+                            <h4>Esperanto</h4>
+                            <span>Nivel Básico</span>
+                        </div>
+                        <div class="barra">
+                            <div class="barra-valor" style="--nivel: 25%;"></div>
+                        </div>
+                    </div>
+                </section>    
+            </div>
         </section>
-        <section id="proyectos">
+        <section id="proyectos" class="seccion-principal">
             <h2>Proyectos</h2>
             <article>
                 <h3>Configuración para i3WM</h3>
@@ -89,7 +131,7 @@
                 <a href="https://github.com/Byr-git/dotfiles-i3">Repo Github</a>
             </article>
         </section>
-        <section id="contacto">
+        <section id="contacto" class="seccion-principal">
             <h2>Contacto</h2>
             <form id="formulario">
                 <fieldset>

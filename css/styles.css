@@ -27,6 +27,11 @@ html {
     scroll-padding-top: 10px;
 }
 
+.seccion-principal {
+    min-height: 100vh;
+    padding: 100px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -64,11 +69,6 @@ nav a:hover {
     color: var(--color-texto);
     background-color: var(--color-destacado);
     border-radius: var(--radio);
-}
-
-section {
-    min-height: 100vh;
-    padding: 100px 100px;
 }
 
 #inicio {

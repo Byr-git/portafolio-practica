@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./src/img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -30,7 +33,7 @@
         <section id="sobre-mi" class="seccion-principal">
             <img class="foto-perfil" src="./src/img/profile.webp" alt="Foto de perfil de un perro con traje">
             <div class="sobre-mi-contenedor">
-                <h2>Sobre mí</h2>
+                <h2>Sobre mí...</h2>
                 <div class="parrafos">
                     <p>Soy un estudiante que se encuentra cursando la carrera de Sistemas de Información, además de estudiar programación web por mi cuenta. Me gustan los idiomas, la música, el diseño web y configurar mi sistema operativo a mi manera (Uso Debian actualmente).</p>
                     <p>Me apoyo de la Inteligencia Artificial para comprender tecnologías o conceptos que no domino al 100%, por lo que es una herramienta fundamental en mi desarrollo personal. Gracias a la IA logro aprender de mis errores y busco la mejor forma de corregirlos.</p>
@@ -39,13 +42,12 @@
                 </div>
             </div>
         </section>
-        <section id="habilidades" class="seccion-principal">
-            <h2>Habilidades</h2>
-            <div class="habilidades-contenedor">             
-                <section class="habilidades-bloque">
-                    <h3>Habilidades Técnicas</h3>
+        <section id="habilidades" class="seccion-principal">           
+            <section class="habilidades-grupo">
+                <h2>Habilidades Técnicas</h2>
+                <div class="habilidades-lista">
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>HTML</h4>
                             <span>60%</span>
                         </div>
@@ -54,7 +56,7 @@
                         </div>
                     </div>
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>CSS</h4>
                             <span>50%</span>
                         </div>
@@ -63,7 +65,7 @@
                         </div>
                     </div>
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>JavaScript</h4>
                             <span>40%</span>
                         </div>
@@ -72,7 +74,7 @@
                         </div>
                     </div>
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>Git</h4>
                             <span>40%</span>
                         </div>
@@ -81,7 +83,7 @@
                         </div>
                     </div>
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>MySQL</h4>
                             <span>40%</span>
                         </div>                       
@@ -90,19 +92,21 @@
                         </div>
                     </div>
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>Linux</h4>
                             <span>40%</span>
                         </div>
                         <div class="barra">
                             <div class="barra-valor" style="--nivel: 40%;"></div>
                         </div>
-                    </div>
-                </section>
-                <section class="habilidades-bloque">
-                    <h3>Otras habilidades</h3>
+                    </div>                                           
+                </div>       
+            </section>
+            <section class="habilidades-grupo">
+                <h2>Otras habilidades</h2>
+                <div class="habilidades-lista">
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>Inglés</h4>
                             <span>Nivel Medio</span>
                         </div>
@@ -111,7 +115,7 @@
                         </div>
                     </div>
                     <div class="habilidad">
-                        <div class="habilidad-info">
+                        <div class="habilidad-cabecera">
                             <h4>Esperanto</h4>
                             <span>Nivel Básico</span>
                         </div>
@@ -119,8 +123,8 @@
                             <div class="barra-valor" style="--nivel: 25%;"></div>
                         </div>
                     </div>
-                </section>    
-            </div>
+                </div>
+            </section>    
         </section>
         <section id="proyectos" class="seccion-principal">
             <h2>Proyectos</h2>

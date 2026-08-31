@@ -46,6 +46,7 @@ body {
 p {
     line-height: 1.5;
     font-size: 18px;
+    color: var(--color-subtext);
     text-shadow: var(--sombra-neumorphism);
 }
 
@@ -65,7 +66,6 @@ html {
 }
 
 .seccion-principal {
-    min-height: 100vh;
     padding: 100px;
 }
 
@@ -117,6 +117,7 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
     background: radial-gradient(var(--color-bg-surface), var(--color-bg-secundary), var(--color-bg));
     gap: 50px;
     text-align: center;
@@ -130,8 +131,6 @@ header nav a:hover {
 
 #inicio p {
     font-size: 30px;
-    color: var(--color-subtext);
-    text-shadow: var(--sombra-neumorphism);
     width: 1000px;
 }
 
@@ -199,7 +198,7 @@ header nav a:hover {
 
 #habilidades {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
     background: radial-gradient(var(--color-bg-surface), var(--color-bg-secundary), var(--color-bg));
 }
@@ -208,6 +207,8 @@ header nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 600px;
     gap: 30px;    
     padding: 40px;
     box-shadow: var(--sombra-neumorphism);
@@ -224,6 +225,8 @@ header nav a:hover {
 .habilidades-lista {
     display: flex;
     flex-direction: column;
+    flex: 1;
+    width: 100%;
     gap: 20px;
     padding: 20px 30px;
     background: var(--color-bg-surface);
@@ -244,9 +247,9 @@ header nav a:hover {
 }
 
 .barra {
-    background-color: var(--color-bg);
-    width: 500px;
+    width: 100%;
     height: 15px;
+    background-color: var(--color-bg);
     border-radius: var(--radio);
     box-shadow: var(--sombra-neumorphism-inset);
 }
@@ -265,7 +268,62 @@ header nav a:hover {
 }
 
 #proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     background-color: var(--color-bg-secundary);
+}
+
+#proyectos h2 {
+    text-align: center;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+#proyectos article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+    padding: 40px;
+    background: var(--radial-gradient);
+    box-shadow: var(--sombra-neumorphism);
+    border-radius: var(--radio);
+    transition: transform 0.3s ease;
+}
+
+#proyectos article:hover {
+    transform: translateY(-10px);
+    outline: var(--color-highlight) 2px solid;
+}
+
+#proyectos h3 {
+    text-align: center;
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 30px;
+    gap: 20px;
+    background: var(--color-bg);
+    box-shadow: var(--sombra-neumorphism-inset);
+    border-radius: var(--radio);
+}
+
+.proyecto img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #contacto {

@@ -36,6 +36,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Space Grotesk";
+    color: var(--color-text);
 }
 
 body {
@@ -43,11 +45,23 @@ body {
     color: var(--color-text);
 }
 
-p {
+a {
+    text-decoration: none;
+}
+
+p, label {
     line-height: 1.5;
     font-size: 18px;
     color: var(--color-subtext);
     text-shadow: var(--sombra-neumorphism);
+}
+
+input, textarea {
+    font-size: 16px;
+    text-shadow: var(--sombra-neumorphism);
+    color: var(--color-subtext);
+    border: none;
+    outline: none;
 }
 
 h2 {
@@ -85,7 +99,6 @@ header {
 
 header a {
     color: var(--color-text);
-    text-decoration: none;
 }
 
 header ul {
@@ -327,11 +340,99 @@ header nav a:hover {
 }
 
 #contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
     background-color: var(--color-bg);
 }
 
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+    padding: 40px;
+    box-shadow: var(--sombra-neumorphism);
+    border-radius: var(--radio);
+    background: var(--radial-gradient);
+}
+
+#formulario fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding: 20px 30px;
+    border: 0px;
+    border-radius: var(--radio);
+    background: var(--color-bg-surface);
+    box-shadow: var(--sombra-neumorphism-inset);
+}
+
+#formulario .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formulario input {
+    background: var(--color-bg);
+    padding: 20px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-neumorphism-inset);
+}
+
+#formulario .campo textarea {
+    background: var(--color-bg);
+    padding: 20px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-neumorphism-inset);
+}
+
+#formulario button {
+    background: var(--color-accent);
+    border-radius: var(--radio);
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    box-shadow: var(--sombra-neumorphism);
+    border: none;
+    color: var(--color-text-dark);
+}
+
+#formulario button:hover {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secundary));
+    color: var(--color-bg);
+    animation: pulseAnimation 0.5s ease;
+}
+
+@keyframes pulseAnimation {
+    50% {
+        transform: scale(1.15);
+    }
+}
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     background-color: var(--color-bg-surface);
+    gap: 5px;
+}
+
+
+footer a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-shadow: var(--sombra-neumorphism);
+}
+
+footer p, a {
+    font-size: 16px;
 }
 

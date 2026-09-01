@@ -80,7 +80,7 @@ html {
 }
 
 .seccion-principal {
-    padding: 100px;
+    padding: 100px clamp(20px, 6vw, 100px);
 }
 
 header {
@@ -91,7 +91,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 10px 100px;
+    padding: 10px clamp(20px, 6vw, 100px);
     background-color: var(--color-bg-surface-transparent);
     box-shadow: var(--sombra-neumorphism);
     backdrop-filter: blur(5px);
@@ -138,13 +138,14 @@ header nav a:hover {
 }
 
 #inicio h1{
-    font-size: 100px;
+    font-size: clamp(50px, 8vw, 100px);
     text-shadow: var(--sombra-neumorphism);
 }
 
 #inicio p {
-    font-size: 30px;
-    width: 1000px;
+    font-size: clamp(18px, 4vw, 30px);
+    width: 100%;
+    max-width: 1000px;
 }
 
 #inicio a {
@@ -172,6 +173,8 @@ header nav a:hover {
 
 #sobre-mi {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 50px;
@@ -180,8 +183,8 @@ header nav a:hover {
 
 .foto-perfil {
     padding: 20px;
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 50%;
     box-shadow: var(--sombra-neumorphism-inset);
     background: var(--radial-gradient);
@@ -192,6 +195,8 @@ header nav a:hover {
     flex-direction: column;
     gap: 40px;
     padding: 40px;
+    width: 100%;
+    max-width: 800px;
     border-radius: var(--radio);
     color: var(--color-subtext);
     box-shadow: var(--sombra-neumorphism);
@@ -212,6 +217,7 @@ header nav a:hover {
 #habilidades {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
     background: radial-gradient(var(--color-bg-surface), var(--color-bg-secundary), var(--color-bg));
 }
@@ -295,6 +301,7 @@ header nav a:hover {
 
 .proyectos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     width: 100%;
@@ -366,6 +373,7 @@ header nav a:hover {
     width: 100%;
     gap: 20px;
     padding: 20px 30px;
+    min-width: 0;
     border: 0px;
     border-radius: var(--radio);
     background: var(--color-bg-surface);
@@ -427,12 +435,161 @@ footer {
 
 footer a {
     display: flex;
-    align-items: center;
     gap: 10px;
     text-shadow: var(--sombra-neumorphism);
 }
 
 footer p, a {
     font-size: 16px;
+    text-align: center;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 1080px) {
+
+    header {
+        padding: 10px 30px;
+    }
+
+    #menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--color-text);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        padding: 20px;
+        background-color: var(--color-bg-surface-transparent);
+        box-shadow: var(--sombra-neumorphism);
+        backdrop-filter: blur(5px);
+        border-radius: var(--radio);
+    }
+
+    header nav.menu-visible {
+        display: block;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav a {
+        justify-content: flex-start;
+    }
+
+    
+    #sobre-mi {
+        flex-direction: column;
+    }
+
+    .foto-perfil {
+        width: min(70vw, 400px);
+        height: auto;
+    }
+
+    .sobre-mi-contenedor {
+        max-width: 800px;
+    }
+
+    #habilidades {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habilidades-grupo {
+        max-width: 600px;
+    }
+
+    .proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #proyectos article {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .seccion-principal {
+        padding: 80px 20px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    #inicio {
+        gap: 30px;
+    }
+
+    #inicio h1 {
+        font-size: clamp(40px, 12vw, 60px);
+    }
+
+    #inicio p {
+        font-size: clamp(16px, 4.5vw, 22px);
+    }
+
+    #inicio a {
+        padding: 20px 40px;
+        margin: 20px 0;
+    }
+
+    .foto-perfil {
+        width: min(70vw, 300px);
+    }
+
+    .sobre-mi-contenedor {
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .parrafos {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: clamp(30px, 8vw, 40px);
+    }
+
+    .habilidades-grupo {
+        padding: 25px 20px;
+    }
+
+    .habilidades-lista {
+        padding: 20px;
+    }
+
+    .habilidad-cabecera {
+        gap: 20px;
+    }
+
+    #proyectos article {
+        padding: 25px 20px;
+    }
+
+    .proyecto {
+        padding: 15px;
+    }
+
+    #formulario {
+        padding: 25px 20px;
+    }
+
+    #formulario fieldset {
+        padding: 20px;
+    }
+}
